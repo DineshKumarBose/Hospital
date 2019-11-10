@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/hospital_leafsoft-0.0.1-SNAPSHOT.jar --server.port=$PORT $JAR_OPTS
+web: java -jar target/leafsoft-hospital-1.0.jar
