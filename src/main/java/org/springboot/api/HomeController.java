@@ -33,7 +33,7 @@ public class HomeController {
 	@RequestMapping("user")
 	@ResponseBody
 	public Principal user(Principal principal) {
-		logger.trace("test"+principal);
+		logger.debug("test"+principal);
 		return principal;
 	}
 }
