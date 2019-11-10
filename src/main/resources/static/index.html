@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	function onload() {
+	    $.ajax({url: "user", success: function(result){
+	    	if(result.userAuthentication &&result.userAuthentication.details.name ) {
+	      		$("#div1").html("<h2>Welcome </h2>"+ result.userAuthentication.details.name);
+	    	} else {
+	    		$("#div1").html("Welcome");
+	    	}
+	    }});
+	}
+	onload();
+});
+</script>
+</head>
+<body>
+
+<div id="div1"><h2>Welcome</h2></div>
+
+</body>
+</html>
